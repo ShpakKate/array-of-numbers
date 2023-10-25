@@ -1,0 +1,5 @@
+<div class="calender-wrapper">
+  <div *ngFor="let day of days$ | async">
+    <app-day-of-planner [day]="day"></app-day-of-planner>
+  </div>
+</div>

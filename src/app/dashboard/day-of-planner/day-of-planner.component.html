@@ -1,0 +1,10 @@
+<div *ngIf="day.value != null" class="day-wrapper">
+  {{ day.value }}
+  <div class="add-task"> + </div>
+</div>
+
+<button *ngIf="day.value == null"
+        type="button"
+        class="button"
+        (click)="newDaysTask(day.day)"
+> add {{ day.day}} number </button>
